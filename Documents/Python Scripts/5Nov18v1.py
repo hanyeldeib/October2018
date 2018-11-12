@@ -1,3 +1,5 @@
+# This is a program to implement Newton's Method to find Zeros
+
 import math
 
 def f(x):
