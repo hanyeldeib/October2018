@@ -1,5 +1,6 @@
 # This is a program to implement Newton's Method to find Zeros
 
+
 import math
 
 def f(x):
@@ -22,10 +23,15 @@ def newtons_method(f, df, x0, e):
             print('Derivative equals zero')
             x0=x0+0.1
     print ('Root is at: ', x0, 'f(X) = ', f(x0))
+    Solutions.append(x0)
+    Precision = 3
+    print("Solutions are:   ",Solutions)
     
-
-x0s = [1,2,3,4,5]
+Solutions = []
+x0s = [1,-2,10,-10]
 for x0 in x0s:
     print('x0 is: ',x0)
     newtons_method(f, df, x0, 1e-5)
+   
+    
  
